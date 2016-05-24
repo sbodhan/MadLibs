@@ -10,6 +10,17 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *nounText;
+
+@property (weak, nonatomic) IBOutlet UITextField *verbText;
+
+@property (weak, nonatomic) IBOutlet UIButton *createSentence;
+
+@property (weak, nonatomic) IBOutlet UILabel *displaySentence;
+
+@property (weak, nonatomic) IBOutlet UIButton *createbutton;
+
+@property (weak, nonatomic) IBOutlet UITextField *CreateSentenceText;
 
 @end
 
