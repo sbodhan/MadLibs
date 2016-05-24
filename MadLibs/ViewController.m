@@ -23,7 +23,6 @@
 
 @implementation ViewController
 
-NSMutableDictionary *muteDictSentence;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -37,15 +36,6 @@ NSMutableDictionary *muteDictSentence;
 
 - (IBAction)buttonPress:(UIButton *)sender {
     
-//    NSMutableDictionary *muteDictSentence = [NSMutableDictionary new];
-    [muteDictSentence setObject:@"%@ %@ in a boat." forKey:@1];
-    [muteDictSentence setObject:@"%@'s mom %@ it in the foot." forKey:@2];
-    [muteDictSentence setObject:@"%@ loves to %@ on Woodward." forKey:@3];
-    
-    NSNumber *randomNum = [NSNumber numberWithInteger:arc4random() % 3 + 1];
-    _displaySentence.text = [NSString stringWithFormat: muteDictSentence[randomNum], _nounText.text, _verbText.text];
-    
-/*
 // Create the dictionary of sentences
     NSDictionary *sentences = @{
         @1 : @"%@ %@ in a boat.",
@@ -57,15 +47,7 @@ NSMutableDictionary *muteDictSentence;
     
 //Display the noun and verb into the selected random sentence
     _displaySentence.text = [NSString stringWithFormat: sentences[randomNum], _nounText.text, _verbText.text];
-*/
  }
-
-
-- (IBAction)createSenButton:(UIButton *)sender {
-//    NSMutableDictionary *muteDictSentence = [NSMutableDictionary new];
-//    [muteDictSentence
-    
-}
 
 
 @end
